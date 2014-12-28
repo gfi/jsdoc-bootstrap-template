@@ -1743,7 +1743,7 @@ table {
   border-top: 2px solid #dddddd;
 }
 .table .table {
-  background-color: #ffffff;
+  background-color: #333;
 }
 .table-condensed th,
 .table-condensed td {
