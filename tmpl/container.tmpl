@@ -2,6 +2,7 @@
     var self = this;
     var inherited, overrides, authors = [];
     // console.log('container.tmpl: docs.forEach(' + docs.length + ')');
+    if (typeof docs !== 'undefined') {
     docs.forEach(function(doc, i) {
         //if (doc.kind == 'class') {
             //inherited = self.findInherited(doc);
@@ -186,4 +187,4 @@
 </section>
 <?js } ?>
 
-<?js }); ?>
+<?js });} ?>

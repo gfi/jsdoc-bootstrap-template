@@ -57,6 +57,7 @@
                         }
                     ;
 
+                if (typeof docs !== 'undefined') {
                 docs.forEach(function(doc, i) {
                     // each doc contains similar information that is found in the
                     // self.find results
@@ -117,7 +118,7 @@
                             data.mixins.push(p);
                         });
                     }
-                });
+                }); }
             ?>
 
             <ul class="nav nav-list affix">
