@@ -239,7 +239,7 @@ function buildNav(members) {//console.log('buildNav(members); members = ', membe
 
         members.classes.forEach(function(c) {
             if ( !hasOwnProp.call(seen, c.longname) ) {
-                classNav += '<li>'+linkto(c.longname, killQuotes(c.name))+'</li>';
+                classNav += '<li>'+linkto(c.longname, killQuotes(c.memberof) + '.' + killQuotes(c.name))+'</li>';
             }
             seen[c.longname] = true;
         });
