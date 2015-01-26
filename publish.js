@@ -524,7 +524,7 @@ exports.publish = function(taffyData, opts, tutorials) {
                     doclet.meta.filename = docletPath;
                 }
             } else {
-                console.log(docletPath);
+                console.warn(docletPath, 'was not found in', sourceFiles);
             }
         }
     });
